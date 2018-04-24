@@ -13,7 +13,9 @@ var addItem = function (item) {
   // It simply is for adding an item to the cart array, no HTML involved - honest ;-)
     var price = parseInt(item.attr('data-price'));
     var name = item.attr('data-name');
-    $('.cart-list').append('<p>' + name + ' - ' + price + '</p>');
+    $('.cart-list').append('<button type="button" class="close" aria-label="Close">\n' +
+        '  <span aria-hidden="true">&times;</span>\n' +
+        '</button><p>' + name + ' - ' + price + '</p>');
     var currVal = parseInt($('.total').text());
     currVal+=price;
     $('.total').text(currVal);

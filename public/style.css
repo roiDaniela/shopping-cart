@@ -103,3 +103,10 @@ body {
 .clear-cart {
   width: 100%;
 }
+
+.delete-btn {
+  display:inline-block;
+  width: 18px;
+  height: 17px;
+  background: url("https://designmodo.com/demo/shopping-cart/delete-icn.svg") no-repeat center;
+}
